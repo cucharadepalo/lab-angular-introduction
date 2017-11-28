@@ -1,3 +1,23 @@
-<p>
-  comments works!
-</p>
+<div class="comments">
+  <h2>Comments</h2>
+  <div class="comment" *ngFor="let comment of comments">
+    <h4>{{ comment.author }} <small>{{ comment.date | date: 'd/M/yy | HH:mm' }}</small></h4>
+    <p>{{ comment.content }}</p>
+  </div>
+</div>
+<div class="form">
+  <h3>Add a comment</h3>
+  <form>
+  <fieldset>
+    <label>Your name<br>
+      <input type="text" name="author">
+    </label>
+  </fieldset>
+  <fieldset>
+    <label>Comment<br>
+      <textarea></textarea>
+    </label>
+  </fieldset>
+  <button type="submit">Comment</button>
+</form>
+</div>

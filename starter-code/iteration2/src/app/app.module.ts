@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { CommentsComponent } from './comments/comments.component';
 
+import { DatePipe } from '@angular/common';
 
 
 @NgModule({
